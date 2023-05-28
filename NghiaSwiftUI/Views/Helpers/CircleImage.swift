@@ -17,6 +17,9 @@ struct CircleImage: View {
                 Circle().stroke(.gray, lineWidth: 4)
             }
             .shadow(radius: 7)
+            .onTapGesture {
+                print("nghia")
+            }
     }
 }
 

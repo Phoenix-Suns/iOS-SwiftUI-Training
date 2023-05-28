@@ -8,26 +8,11 @@
 import SwiftUI
 
 struct ListHorizontalItem: View {
-    var landmark: Landmark
+    var item: String
     
     var body: some View {
-        VStack(alignment: .leading) {
-            landmark.image
-                .renderingMode(.original)
-                .resizable()
-                .frame(width: 155, height: 155)
-                .cornerRadius(5)
-            HStack {
-                Text(landmark.name)
-                    .foregroundColor(.primary)
-                .font(.caption)
-                // Favorite
-                if landmark.isFavorite {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                }
-            }
-        }.padding()
+        Label(item, systemImage: "tray.full.fill")
+            .padding()
     }
 }
 
@@ -36,8 +21,8 @@ struct ListHorizontalItem_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            ListHorizontalItem(landmark: landmarks[0])
-            ListHorizontalItem(landmark: landmarks[1])
+            ListHorizontalItem(item: "Item 1")
+            ListHorizontalItem(item: "Item 2")
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

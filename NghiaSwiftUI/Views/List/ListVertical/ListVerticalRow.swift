@@ -8,23 +8,11 @@
 import SwiftUI
 
 struct ListVerticalRow: View {
-    var landmark: Landmark
+    var item: String
     
     var body: some View {
-        HStack {
-            landmark.image
-                .resizable()
-                .frame(width: 50, height: 50)
-            Text(landmark.name)
-            
-            Spacer()
-            
-            // Favorite
-            if landmark.isFavorite {
-                Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
-            }
-        }
+        Label(item, systemImage: "tray.full.fill")
+            .padding()
     }
 }
 
@@ -33,8 +21,8 @@ struct ListVerticalRow_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+            ListVerticalRow(item: "Item 1")
+            ListVerticalRow(item: "Item 2")
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

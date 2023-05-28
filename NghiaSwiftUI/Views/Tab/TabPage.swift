@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Tab: View {
+struct TabPage: View {
     @State private var selection: Tab = .featured
     
     enum Tab {
@@ -20,13 +20,14 @@ struct Tab: View {
         
         // TAB UI
         TabView(selection: $selection) {
-            CategoryHome()
+            // View
+            Text("Tab 1 Content")
                 .tabItem {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
 
-            LandmarkList()
+            Text("Tab 2 Content")
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
@@ -37,7 +38,7 @@ struct Tab: View {
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        Tab()
+        TabPage()
             .environmentObject(ModelData())
     }
 }

@@ -1,13 +1,13 @@
 //
-//  ListVertical.swift
+//  LandmarkList.swift
 //  NghiaSwiftUI
 //
-//  Created by Nghia on 5/23/23.
+//  Created by Nghia PC on 21/05/2023.
 //
 
 import SwiftUI
 
-struct ListVertical: View {
+struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
@@ -19,10 +19,11 @@ struct ListVertical: View {
     }
     
     var body: some View {
-//        List {
-//            LandmarkRow(landmark: landmarks[0])
-//            LandmarkRow(landmark: landmarks[1])
-//        }
+        NavigationView {
+            //        List {
+            //            LandmarkRow(landmark: landmarks[0])
+            //            LandmarkRow(landmark: landmarks[1])
+            //        }
             
             // if Landmark not extend Identifiable
             //List(landmarks, id: \.id) { landmark in
@@ -36,23 +37,21 @@ struct ListVertical: View {
                 
                 // Filtered List View
                 ForEach(filteredLandmarks) { landmark in
-                    
-                    // Nav Button
                     NavigationLink {
-                        // Row click
+                        // Row click navigate (symbol: >)
                         LandmarkDetail(landmark: landmark)
                     } label: {
                         // Row View
-                        ListVerticalRow(landmark: landmark)
+                        LandmarkRow(landmark: landmark)
                     }
                 }
             }
             .navigationTitle("Landmarks")   // Nav title
         }
-
+    }
 }
 
-struct ListVertical_Previews: PreviewProvider {
+struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         // Review on list phone
         //        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
@@ -61,7 +60,11 @@ struct ListVertical_Previews: PreviewProvider {
         //                .previewDisplayName(deviceName)
         //        }
         
-        ListVertical()
+        LandmarkList()
             .environmentObject(ModelData())
+            .environment(\.sizeCategory, .extraLarge)   // Phone size
+            .environment(\.colorScheme, .dark)  // Dark theme
+            .environment(\.layoutDirection, .rightToLeft)   // right to left
+            .environment(\.locale, Locale(identifier: "ar"))    // Language
     }
 }
