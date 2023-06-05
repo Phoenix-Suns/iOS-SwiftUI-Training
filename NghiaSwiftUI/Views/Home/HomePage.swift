@@ -83,6 +83,12 @@ struct HomePage: View {
                         Label("Zoom Image", systemImage: "photo.artframe")
                     }
                     .buttonStyle(RowButtonStyle())
+                    NavigationLink {
+                        ListTopGridPage()
+                    } label: {
+                        Label("List on Grid", systemImage: "list.bullet.below.rectangle")
+                    }
+                    .buttonStyle(RowButtonStyle())
                 }
             }
             // Navigation Title
