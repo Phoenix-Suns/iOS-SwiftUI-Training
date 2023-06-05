@@ -129,14 +129,14 @@
 			isa = PBXGroup;
 			children = (
 				4B1E44E22A122EF0006317BD /* ContentView.swift */,
+				D57863B92A1CB50A00F51DD0 /* HomePage.swift */,
+				D5C2916C2A1F578F0088136B /* _Practice */,
 				D5C2916D2A1F58E00088136B /* Stack */,
 				D5A7B5C22A1DAC45002960DE /* Navigation */,
 				D53E73252A1D28A2009AF914 /* List */,
 				D57863BB2A1CB5C300F51DD0 /* Tab */,
-				D57863B82A1CB4FB00F51DD0 /* Home */,
 				4BB832202A1A74F600322B0E /* Helpers */,
 				D5C291722A1FB55D0088136B /* Animation */,
-				D5C2916C2A1F578F0088136B /* Practice */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,14 +218,6 @@
 			path = List;
 			sourceTree = "<group>";
 		};
-		D57863B82A1CB4FB00F51DD0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D57863B92A1CB50A00F51DD0 /* HomePage.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		D57863BB2A1CB5C300F51DD0 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,14 +252,14 @@
 			path = GridHorizontal;
 			sourceTree = "<group>";
 		};
-		D5C2916C2A1F578F0088136B /* Practice */ = {
+		D5C2916C2A1F578F0088136B /* _Practice */ = {
 			isa = PBXGroup;
 			children = (
 				D5A85D6D2A2DB5D1005EAA20 /* ListTopGrid */,
 				4BB832212A1A797800322B0E /* Category */,
 				4BB8321F2A1A74DD00322B0E /* Landmarks */,
 			);
-			path = Practice;
+			path = _Practice;
 			sourceTree = "<group>";
 		};
 		D5C2916D2A1F58E00088136B /* Stack */ = {
