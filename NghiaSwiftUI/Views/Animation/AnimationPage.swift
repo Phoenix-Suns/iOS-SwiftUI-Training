@@ -12,12 +12,15 @@ struct AnimationPage: View {
     
     var body: some View {
         VStack {
-            Button("Action") {
+            Text("Debug: isChange = \(String(isChange))")
+            
+            Button("Run Animation") {
                 // ===== Run Animation =====
                 withAnimation(.spring()) {
                     self.isChange.toggle()
                 }
             }
+            .buttonStyle(.bordered)
             .font(.title)
             
             Spacer()
@@ -36,7 +39,7 @@ struct AnimationPage: View {
                 .frame(width: 200, height: 200)
             
                 // === Animation without withAnimation ===
-                .rotationEffect(isChange ? .degrees(90) : .degrees(0))
+                .rotationEffect(isChange ? .degrees(40) : .degrees(0))
                 .scaleEffect(isChange ? 1.2 : 1)
         }
         .padding()

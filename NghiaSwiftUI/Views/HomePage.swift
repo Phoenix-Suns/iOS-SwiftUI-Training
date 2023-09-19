@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct HomePage: View {
+    @State var sliderValue: Int = 0
+    
+    let columns = [
+        GridItem(.adaptive(minimum: 80)),
+        GridItem(.adaptive(minimum: 80)),
+        GridItem(.adaptive(minimum: 80)),
+        //GridItem(.flexible(minimum: 80)),
+        //GridItem(.fixed(80))
+    ]
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -61,6 +71,12 @@ struct HomePage: View {
                         Label("Animation", systemImage: "teddybear.fill")
                     }
                     .buttonStyle(RowButtonStyle())
+                    NavigationLink {
+                        ButtonPage()
+                    } label: {
+                        Label("Button", systemImage: "button.programmable.square.fill")
+                    }
+                    .buttonStyle(RowButtonStyle())
                 }
                 Group {
                     Text("Practice")
@@ -89,6 +105,49 @@ struct HomePage: View {
                         Label("List on Grid", systemImage: "list.bullet.below.rectangle")
                     }
                     .buttonStyle(RowButtonStyle())
+                    Text("\(sliderValue)")
+                    
+                    IntSliderView(value: $sliderValue)
+                        .padding(.horizontal, 20)
+                    
+                    AsyncImage(urlString: "https://picsum.photos/200")
+                    
+                    NavigationLink {
+                        TestLoadingViewPage()
+                    } label: {
+                        Text("Loading View")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    NavigationLink {
+                        TestPagerDotPage()
+                    } label: {
+                        Text("Pager View")
+                    }
+                    .buttonStyle(.bordered)
+                }
+                
+                Group {
+                    NavigationLink {
+                        TestMarqueePage()
+                    } label: {
+                        Text("Marquee Text (running text)")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    NavigationLink {
+                        TestBottomSheetPage()
+                    } label: {
+                        Text("Bottom Sheet")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    NavigationLink {
+                        TestPullToRefreshPage()
+                    } label: {
+                        Text("Pull to refresh")
+                    }
+                    .buttonStyle(.bordered)
                 }
             }
             // Navigation Title
