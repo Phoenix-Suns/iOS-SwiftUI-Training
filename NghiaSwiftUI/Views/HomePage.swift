@@ -129,6 +129,13 @@ struct HomePage: View {
                 
                 Group {
                     NavigationLink {
+                        TestSwipeViewPage()
+                    } label: {
+                        Text("Swipe View")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    NavigationLink {
                         TestMarqueePage()
                     } label: {
                         Text("Marquee Text (running text)")
@@ -146,6 +153,22 @@ struct HomePage: View {
                         TestPullToRefreshPage()
                     } label: {
                         Text("Pull to refresh")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    NavigationLink {
+                        TestDelayAction()
+                    } label: {
+                        Text("Delay Action")
+                    }
+                    .buttonStyle(.bordered)
+                }
+                
+                Group {
+                    NavigationLink {
+                        TestToastPage()
+                    } label: {
+                        Text("Toast")
                     }
                     .buttonStyle(.bordered)
                 }

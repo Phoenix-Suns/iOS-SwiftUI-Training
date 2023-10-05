@@ -12,9 +12,10 @@ struct TestPagerDotPage: View {
         PagerWithDotsView(["one", "two", "three"]) { item in
             VStack {
                 Text(item)
+                    .font(.system(size: 150))
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(Color.gray)
+            .background(Color.random)
         }
     }
 }

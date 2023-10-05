@@ -28,11 +28,11 @@ struct PagerView<Data, Content>: View
                 DragGesture().updating($translation) { value, state, _ in
                     state = value.translation.width
                 }.onEnded { value in
-                    let offset = value.translation.width / geometry.size.width * 1.25 // 1.25 * width will change page
+                    let offset = value.translation.width / geometry.size.width * changeRatio
                     let newIndex = (CGFloat(currentIndex) - offset).rounded()
                     
                     withAnimation(Animation.interactiveSpring(
-                        response: 2
+                        response: 0.3
                     )) {
                         currentIndex = min(max(Int(newIndex), 0), data.count - 1)
                     }
@@ -58,6 +58,7 @@ struct PagerView<Data, Content>: View
     /// Struct's private properties.
     @GestureState private var translation: CGFloat = 0
     @Binding var currentIndex: Int
+    private let changeRatio: CGFloat = 2.5 // 2.5 * width will change page
 }
 
 struct PagerView_Previews: PreviewProvider {
@@ -66,9 +67,10 @@ struct PagerView_Previews: PreviewProvider {
         PagerView(data, currentIndex: .constant(0)) { item in
             VStack {
                 Text(item)
+                    .font(.system(size: 200))
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(Color.gray)
+            .background(Color.random)
         }
     }
 }
