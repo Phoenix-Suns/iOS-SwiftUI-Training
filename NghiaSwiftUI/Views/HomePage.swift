@@ -171,6 +171,13 @@ struct HomePage: View {
                         Text("Toast")
                     }
                     .buttonStyle(.bordered)
+                    
+                    NavigationLink {
+                        TestImageScalePage()
+                    } label: {
+                        Text("Image Scale")
+                    }
+                    .buttonStyle(.bordered)
                 }
             }
             // Navigation Title

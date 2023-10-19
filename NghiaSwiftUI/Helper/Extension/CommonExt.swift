@@ -29,3 +29,12 @@ extension UIViewController {
         })
     }
 }
+
+/// Binding<Int16> to Binding<Double>
+public extension Binding where Value == Int16 {
+    func toDouble() -> Binding<Double> {
+        return Binding<Double>(get: { Double(self.wrappedValue) },
+                               set: { self.wrappedValue = Int16($0) })
+    }
+}
+

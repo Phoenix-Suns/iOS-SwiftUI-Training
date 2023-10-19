@@ -38,13 +38,15 @@ struct SwipeView<Content: View>: View {
 
     /// Struct's public properties.
     private var total: Int
+    @Binding private var index: Int
     private var updatePosition: Bool
     private var content: (_ width: CGFloat, _ height: CGFloat) -> Content
     private var indexChange: (Int) -> Void
 
     /// Struct's constructors.
-    init(total: Int, updatePosition: Bool = true, @ViewBuilder content: @escaping (_ width: CGFloat, _ height: CGFloat) -> Content, indexChange: @escaping (Int) -> Void) {
+    init(total: Int, index: Binding<Int>, updatePosition: Bool = true, @ViewBuilder content: @escaping (_ width: CGFloat, _ height: CGFloat) -> Content, indexChange: @escaping (Int) -> Void) {
         self.total = total
+        self._index = index
         self.updatePosition = updatePosition
         self.content = content
         self.indexChange = indexChange
@@ -53,7 +55,6 @@ struct SwipeView<Content: View>: View {
     /// Struct's private properties.
     @GestureState private var translation: CGFloat = 0
     private let changeRatio: CGFloat = 2
-    @State private(set) var index: Int = 0
 }
 
 // MARK: - SwipeView's preview
@@ -62,7 +63,7 @@ struct SwipeView<Content: View>: View {
         @State static var index: Int = 0
 
         static var previews: some View {
-            SwipeView(total: 10, updatePosition: true, content: { width, height in
+            SwipeView(total: 10, index: $index, updatePosition: true, content: { width, height in
                 LazyHStack(spacing: 0) {
                     // render content
                     ForEach(0 ..< 10, id: \.self) { elem in

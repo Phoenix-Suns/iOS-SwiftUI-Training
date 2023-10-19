@@ -21,7 +21,7 @@ struct TestSwipeViewPage: View {
 //            .background(Color.random)
 //        }
         
-        SwipeView(total: items.count) { width, height in
+        SwipeView(total: items.count, index: $index) { width, height in
             LazyHStack(spacing: 0) {
                 // render content
                 ForEach(items, id: \.self) { elem in
