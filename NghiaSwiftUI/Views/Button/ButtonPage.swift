@@ -28,7 +28,7 @@ struct ButtonPage: View {
                 HStack {
                     LongPressView {
                         Button("Long Press") {}
-                        .buttonStyle(.borderedProminent)
+                        //.buttonStyle(.borderedProminent)
                     } pressStatus: { status in
                         switch status {
                         case .Press:

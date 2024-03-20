@@ -12,6 +12,13 @@ struct AnimationPage: View {
     
     var body: some View {
         VStack {
+            NavigationLink {
+                MultipleAnimationPage()
+            } label: {
+                Label("Multiple Animation", systemImage: "hare.fill")
+            }
+            .buttonStyle(RowButtonStyle())
+            
             Text("Debug: isChange = \(String(isChange))")
             
             Button("Run Animation") {

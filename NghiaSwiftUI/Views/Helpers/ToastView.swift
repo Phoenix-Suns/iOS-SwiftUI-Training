@@ -34,7 +34,7 @@ struct ToastView<Content>: View where Content: View {
                 }
                 .padding(5)
                 .frame(width: geometry.size.width / 1.25)
-                .background(Color.gray.opacity(0.5))
+                .background(Color.gray)
                 .foregroundColor(Color.secondary)
                 .cornerRadius(20)
                 .transition(.slide)

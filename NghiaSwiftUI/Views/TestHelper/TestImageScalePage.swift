@@ -14,6 +14,17 @@ struct TestImageScalePage: View {
                 let image = Image("bg_square")
                 
                 HStack {
+                    Text("Fit width")
+                    Spacer()
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200)
+                        .border(Color.black, width: 5)
+                        .clipped()
+                }
+                
+                HStack {
                     Text("Fit")
                     Spacer()
                     image

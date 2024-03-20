@@ -11,13 +11,12 @@ struct TestSliderPage: View {
     var body: some View {
         VStack {
             Text("\(sliderValue)")
-            IntSliderView(value: $sliderValue)
-            IntSliderView(value: .constant(50))
+            SliderView(value: $sliderValue, minValue: .constant(0), maxValue: .constant(100), thumbColor: .red, minTrackColor: .green, maxTrackColor: .green)
+                .frame(width: 300, height: 20)
         }
-        .background(Color.gray)
     }
     
-    @State var sliderValue: Int = 0
+    @State var sliderValue: Double = 100
 }
 
 #Preview {
