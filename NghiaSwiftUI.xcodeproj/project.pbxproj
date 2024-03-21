@@ -65,8 +65,20 @@
 		D5C518392A1E609B006FBFBE /* GridVerticalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C518382A1E609B006FBFBE /* GridVerticalItem.swift */; };
 		D5C9B5D22AE18C1A00F047CF /* TestSliderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C9B5D12AE18C1A00F047CF /* TestSliderPage.swift */; };
 		D5CDE5F92B4F9D8700A55F0F /* PopoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CDE5F82B4F9D8700A55F0F /* PopoverPage.swift */; };
+		D5CE9E042BAA988600825626 /* CircleColorPicker1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E032BAA988600825626 /* CircleColorPicker1View.swift */; };
+		D5CE9E062BAA99CA00825626 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E052BAA99CA00825626 /* Color+Extension.swift */; };
+		D5CE9E082BAA9CC000825626 /* AngularGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E072BAA9CC000825626 /* AngularGradientView.swift */; };
+		D5CE9E0A2BAAA1BA00825626 /* TestColorPickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E092BAAA1BA00825626 /* TestColorPickerPage.swift */; };
+		D5CE9E0C2BAAA3CC00825626 /* SquareColorPicker1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E0B2BAAA3CC00825626 /* SquareColorPicker1View.swift */; };
+		D5CE9E112BAADB4400825626 /* SquareColorPicker2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE9E102BAADB4400825626 /* SquareColorPicker2View.swift */; };
 		D5D082292B2845DE008E821D /* PopToTopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D082282B2845DE008E821D /* PopToTopPage.swift */; };
 		D5D184F72AB95DE600E8AD40 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D184F62AB95DE600E8AD40 /* ColorExt.swift */; };
+		D5D615B92BABDAE900241BBF /* HueSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615B82BABDAE900241BBF /* HueSlider.swift */; };
+		D5D615BD2BABDCF900241BBF /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615BC2BABDCF900241BBF /* CustomSlider.swift */; };
+		D5D615BF2BABDEF600241BBF /* AlphaSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615BE2BABDEF600241BBF /* AlphaSlider.swift */; };
+		D5D615C12BABE61C00241BBF /* CheckerBoardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615C02BABE61C00241BBF /* CheckerBoardBackground.swift */; };
+		D5D615C52BABE8FC00241BBF /* DualAxisSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615C42BABE8FC00241BBF /* DualAxisSlider.swift */; };
+		D5D615C72BAC147B00241BBF /* SquareColorPicker3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D615C62BAC147B00241BBF /* SquareColorPicker3View.swift */; };
 		D5DCB56F2AC55CB300570392 /* DelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCB56E2AC55CB300570392 /* DelayAction.swift */; };
 		D5DCB5712AC55D9400570392 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCB5702AC55D9400570392 /* Helper.swift */; };
 		D5DCB5732AC5733200570392 /* TestDelayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCB5722AC5733200570392 /* TestDelayAction.swift */; };
@@ -140,8 +152,20 @@
 		D5C518382A1E609B006FBFBE /* GridVerticalItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridVerticalItem.swift; sourceTree = "<group>"; };
 		D5C9B5D12AE18C1A00F047CF /* TestSliderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSliderPage.swift; sourceTree = "<group>"; };
 		D5CDE5F82B4F9D8700A55F0F /* PopoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPage.swift; sourceTree = "<group>"; };
+		D5CE9E032BAA988600825626 /* CircleColorPicker1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColorPicker1View.swift; sourceTree = "<group>"; };
+		D5CE9E052BAA99CA00825626 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		D5CE9E072BAA9CC000825626 /* AngularGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularGradientView.swift; sourceTree = "<group>"; };
+		D5CE9E092BAAA1BA00825626 /* TestColorPickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorPickerPage.swift; sourceTree = "<group>"; };
+		D5CE9E0B2BAAA3CC00825626 /* SquareColorPicker1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareColorPicker1View.swift; sourceTree = "<group>"; };
+		D5CE9E102BAADB4400825626 /* SquareColorPicker2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareColorPicker2View.swift; sourceTree = "<group>"; };
 		D5D082282B2845DE008E821D /* PopToTopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToTopPage.swift; sourceTree = "<group>"; };
 		D5D184F62AB95DE600E8AD40 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		D5D615B82BABDAE900241BBF /* HueSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueSlider.swift; sourceTree = "<group>"; };
+		D5D615BC2BABDCF900241BBF /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		D5D615BE2BABDEF600241BBF /* AlphaSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaSlider.swift; sourceTree = "<group>"; };
+		D5D615C02BABE61C00241BBF /* CheckerBoardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerBoardBackground.swift; sourceTree = "<group>"; };
+		D5D615C42BABE8FC00241BBF /* DualAxisSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualAxisSlider.swift; sourceTree = "<group>"; };
+		D5D615C62BAC147B00241BBF /* SquareColorPicker3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareColorPicker3View.swift; sourceTree = "<group>"; };
 		D5DCB56E2AC55CB300570392 /* DelayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayAction.swift; sourceTree = "<group>"; };
 		D5DCB5702AC55D9400570392 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D5DCB5722AC5733200570392 /* TestDelayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDelayAction.swift; sourceTree = "<group>"; };
@@ -253,6 +277,7 @@
 		4BB832202A1A74F600322B0E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D5CE9E022BAA954000825626 /* ColorPicker */,
 				D5C2A4432B87313300A65CD2 /* TextEditView.swift */,
 				D54BE2FA2AB9B0CB004CED17 /* SwipeView.swift */,
 				D572CD262A5C17D800941C68 /* PagerWithDotsView.swift */,
@@ -370,6 +395,7 @@
 				D51D5E922ACAB7CB00FB41FE /* TestToastPage.swift */,
 				D5B879A42AE0E16C0093D49B /* TestImageScalePage.swift */,
 				D5C9B5D12AE18C1A00F047CF /* TestSliderPage.swift */,
+				D5CE9E092BAAA1BA00825626 /* TestColorPickerPage.swift */,
 			);
 			path = TestHelper;
 			sourceTree = "<group>";
@@ -430,6 +456,27 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
+		D5CE9E022BAA954000825626 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D5D615B52BABD5D600241BBF /* Square2 */,
+				D5CE9E0F2BAAB82000825626 /* Circle1 */,
+				D5CE9E0B2BAAA3CC00825626 /* SquareColorPicker1View.swift */,
+				D5D615C62BAC147B00241BBF /* SquareColorPicker3View.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		D5CE9E0F2BAAB82000825626 /* Circle1 */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE9E032BAA988600825626 /* CircleColorPicker1View.swift */,
+				D5CE9E052BAA99CA00825626 /* Color+Extension.swift */,
+				D5CE9E072BAA9CC000825626 /* AngularGradientView.swift */,
+			);
+			path = Circle1;
+			sourceTree = "<group>";
+		};
 		D5D082272B2845AB008E821D /* PopToTop */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +503,19 @@
 				D51D5E8E2ACAB30300FB41FE /* CommonExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D5D615B52BABD5D600241BBF /* Square2 */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE9E102BAADB4400825626 /* SquareColorPicker2View.swift */,
+				D5D615B82BABDAE900241BBF /* HueSlider.swift */,
+				D5D615BC2BABDCF900241BBF /* CustomSlider.swift */,
+				D5D615BE2BABDEF600241BBF /* AlphaSlider.swift */,
+				D5D615C02BABE61C00241BBF /* CheckerBoardBackground.swift */,
+				D5D615C42BABE8FC00241BBF /* DualAxisSlider.swift */,
+			);
+			path = Square2;
 			sourceTree = "<group>";
 		};
 		D5EA0CC02A49A7050069C010 /* Button */ = {
@@ -540,8 +600,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1E44E32A122EF0006317BD /* ContentView.swift in Sources */,
+				D5CE9E062BAA99CA00825626 /* Color+Extension.swift in Sources */,
 				D5F91AEC2A4ACACF001D02B1 /* LongPressView.swift in Sources */,
 				D54BE2FB2AB9B0CB004CED17 /* SwipeView.swift in Sources */,
+				D5D615C52BABE8FC00241BBF /* DualAxisSlider.swift in Sources */,
 				D58D9E8E2B3A780D00F8D614 /* DragMultiViewsPage.swift in Sources */,
 				D5B879A52AE0E16C0093D49B /* TestImageScalePage.swift in Sources */,
 				D5AF3F962A71662200B65261 /* TestMarqueePage.swift in Sources */,
@@ -550,6 +612,7 @@
 				D54BE2FD2AB9B14D004CED17 /* TestSwipeViewPage.swift in Sources */,
 				D5EA0CC22A49A74A0069C010 /* ButtonPage.swift in Sources */,
 				D5C291692A1F1FC00088136B /* GridHorizontalItem.swift in Sources */,
+				D5CE9E0A2BAAA1BA00825626 /* TestColorPickerPage.swift in Sources */,
 				D500D68D2AE651BA00E364F2 /* SliderView.swift in Sources */,
 				D5E959A42A6F83C80031377D /* AsyncImage.swift in Sources */,
 				D5CDE5F92B4F9D8700A55F0F /* PopoverPage.swift in Sources */,
@@ -561,11 +624,13 @@
 				D5A85D6F2A2DB61D005EAA20 /* ListTopGridPage.swift in Sources */,
 				D5A9F7332A94ACA7009F7DB1 /* PullToRefreshView.swift in Sources */,
 				D5EA0CBF2A49923D0069C010 /* LoadingView.swift in Sources */,
+				D5CE9E082BAA9CC000825626 /* AngularGradientView.swift in Sources */,
 				4BB8321A2A1A588500322B0E /* LandmarkList.swift in Sources */,
 				D553ED5A2B9859F500F1028A /* ViewParamPage.swift in Sources */,
 				D5A7B5C42A1DACD7002960DE /* NavigationPage.swift in Sources */,
 				4BB832232A1A798900322B0E /* CategoryHome.swift in Sources */,
 				D5C518392A1E609B006FBFBE /* GridVerticalItem.swift in Sources */,
+				D5D615C12BABE61C00241BBF /* CheckerBoardBackground.swift in Sources */,
 				D5A7B5C62A1DB76D002960DE /* ListVerticalRow.swift in Sources */,
 				D5DCB5732AC5733200570392 /* TestDelayAction.swift in Sources */,
 				D5C518372A1E5D5A006FBFBE /* GridVerticalPage.swift in Sources */,
@@ -575,21 +640,27 @@
 				D5946D382A38602C00F51795 /* IntSliderView.swift in Sources */,
 				D53E732B2A1D2C86009AF914 /* ListHorizontalItem.swift in Sources */,
 				4BB8321C2A1A5E2900322B0E /* LandmarkDetail.swift in Sources */,
+				D5D615C72BAC147B00241BBF /* SquareColorPicker3View.swift in Sources */,
 				D5D184F72AB95DE600E8AD40 /* ColorExt.swift in Sources */,
 				D5C2916F2A1F598A0088136B /* HStackPage.swift in Sources */,
 				D5D082292B2845DE008E821D /* PopToTopPage.swift in Sources */,
 				D5FDB3222B908C4D003B6C46 /* MultipleAnimationPage.swift in Sources */,
 				D5AF3F9A2A71670400B65261 /* TestPagerDotPage.swift in Sources */,
+				D5CE9E0C2BAAA3CC00825626 /* SquareColorPicker1View.swift in Sources */,
 				D5F388562A1E01B800695D7C /* ReceiveMessageView.swift in Sources */,
 				D5F91AF42A4AE404001D02B1 /* LongPressHandle.swift in Sources */,
 				D51D5E8F2ACAB30300FB41FE /* CommonExt.swift in Sources */,
+				D5CE9E042BAA988600825626 /* CircleColorPicker1View.swift in Sources */,
 				D5C291712A1F9A260088136B /* ZoomImageView.swift in Sources */,
 				D572CD282A5C17D800941C68 /* PagerWithDotsView.swift in Sources */,
+				D5CE9E112BAADB4400825626 /* SquareColorPicker2View.swift in Sources */,
 				4BB832052A1A11E800322B0E /* CircleImage.swift in Sources */,
 				D5C2916B2A1F1FF70088136B /* GridHorizontalPage.swift in Sources */,
 				D51D5E912ACAB6AD00FB41FE /* ToastView.swift in Sources */,
 				D5A9F7352A94B0F6009F7DB1 /* TestPullToRefreshPage.swift in Sources */,
 				4BB832112A1A238800322B0E /* Landmark.swift in Sources */,
+				D5D615BD2BABDCF900241BBF /* CustomSlider.swift in Sources */,
+				D5D615B92BABDAE900241BBF /* HueSlider.swift in Sources */,
 				4BB8322D2A1A827C00322B0E /* CategoryItem.swift in Sources */,
 				D57863BD2A1CB5DA00F51DD0 /* TabPage.swift in Sources */,
 				4BB832182A1A469900322B0E /* LandmarkRow.swift in Sources */,
@@ -597,6 +668,7 @@
 				D51D5E932ACAB7CB00FB41FE /* TestToastPage.swift in Sources */,
 				D5627A5C2AF0FC2C00597F5B /* SectorChartExample.swift in Sources */,
 				D5AF3F932A7164BA00B65261 /* MarqueeText.swift in Sources */,
+				D5D615BF2BABDEF600241BBF /* AlphaSlider.swift in Sources */,
 				D53E73272A1D28C6009AF914 /* ListHorizontalPage.swift in Sources */,
 				D5A9F72D2A947131009F7DB1 /* TestBottomSheetPage.swift in Sources */,
 				4BB832132A1A248A00322B0E /* ModelData.swift in Sources */,
@@ -735,7 +807,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NghiaSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = QZ7AW46SH6;
+				DEVELOPMENT_TEAM = C94GNXZYMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -748,7 +820,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nghia.NghiaSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = nghia.SwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -764,7 +836,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NghiaSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = QZ7AW46SH6;
+				DEVELOPMENT_TEAM = C94GNXZYMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -777,7 +849,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nghia.NghiaSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = nghia.SwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

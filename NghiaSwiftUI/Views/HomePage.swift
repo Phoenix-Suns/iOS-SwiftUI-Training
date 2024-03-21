@@ -81,6 +81,8 @@ struct HomePage: View {
         HomeRow(name: "Pick Video", view: { PickVideoView() }, icon: "video.bubble.fill.rtl"),
         HomeRow(name: "Popover dialog", view: { PopoverPage() }, icon: "contextualmenu.and.cursorarrow"),
         HomeRow(name: "Text Edit", view: { TestTextEditView() }, icon: "text.cursor"),
+        HomeRow(name: "Text Edit", view: { TestTextEditView() }, icon: "text.cursor"),
+        HomeRow(name: "Color Picker", view: { TestColorPickerPage() }, icon: "scope"),
     ]
 }
 
