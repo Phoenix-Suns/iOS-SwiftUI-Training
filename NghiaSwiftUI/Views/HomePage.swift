@@ -60,8 +60,10 @@ struct HomePage: View {
                 Text("nghia")
             }
         }, icon: "circle.hexagonpath.fill"),
+        HomeRow(name: "UI Tips - Tricks", view: { UITipsTricksPage() }, icon: "list.number.rtl"),
         
         HomeRow(name: "Practice", view: nil, icon: nil),
+        
         HomeRow(name: "Landmark List", view: { LandmarkList() }, icon: "list.number.rtl"),
         HomeRow(name: "Category Home", view: { CategoryHome() }, icon: "music.note.house.fill"),
         HomeRow(name: "Zoom Image", view: { ZoomImageView() }, icon: "photo.artframe"),
@@ -83,6 +85,8 @@ struct HomePage: View {
         HomeRow(name: "Text Edit", view: { TestTextEditView() }, icon: "text.cursor"),
         HomeRow(name: "Text Edit", view: { TestTextEditView() }, icon: "text.cursor"),
         HomeRow(name: "Color Picker", view: { TestColorPickerPage() }, icon: "scope"),
+        HomeRow(name: "Move Item to Other List", view: { MoveItemToOtherListPage() }, icon: "list.bullet.below.rectangle"),
+        HomeRow(name: "Drawing", view: { DrawingPage() }, icon: "hand.draw.fill"),
     ]
 }
 

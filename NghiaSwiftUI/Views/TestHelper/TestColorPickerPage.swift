@@ -36,6 +36,10 @@ struct TestColorPickerPage: View {
                     SquareColorPicker3View(selectedColor: $selectedColor)
                         .frame(width: 200, height: 200)
                         .border(.gray, width: 1)
+                    
+                    RingColorPickerView(selectedColor: $selectedColor)
+                        .frame(width: 200, height: 200)
+                        .border(.gray, width: 1)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
             }

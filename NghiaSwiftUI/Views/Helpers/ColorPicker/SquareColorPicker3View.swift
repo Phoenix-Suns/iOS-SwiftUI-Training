@@ -29,7 +29,6 @@ struct SquareColorPicker3View: View {
     
     var body: some View {
             VStack {
-//                DualAxisSlider(horizontal: $lightness, vertical: $hue) {
                 DualAxisSlider(horizontal: $horizontal, vertical: $hue) {
                 
                             ZStack {
