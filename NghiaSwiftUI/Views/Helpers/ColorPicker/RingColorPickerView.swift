@@ -11,14 +11,17 @@ import SwiftUI
 
 struct RingColorPickerView: View {
     @Binding var selectedColor: Color
+    var ringWidth: CGFloat = 64
     
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                AngularGradient(gradient: gradient(), center: UnitPoint(x: 0.5, y: 0.5))
-                    .aspectRatio(contentMode: .fit)
-                    .rotationEffect(.degrees(-90))
-                    .clipShape(Circle())
+                Circle()
+                    .strokeBorder(
+                    AngularGradient(gradient: gradient(), center: UnitPoint(x: 0.5, y: 0.5))
+                    , lineWidth: ringWidth
+                )
+                .rotationEffect(.degrees(-90))
                 
                 let markerPosition = measureMarkerPosition(containerSize: geo.size)
                     markerView

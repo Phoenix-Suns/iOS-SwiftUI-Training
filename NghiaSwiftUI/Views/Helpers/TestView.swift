@@ -25,7 +25,7 @@ struct PunchOutView: View {
             // Transparent punch-out area
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 200, height: 200)
-                .position(x: 100, y: 100)
+                //.position(x: 100, y: 100)
                 .blendMode(.destinationOut)
         }
         .compositingGroup()

@@ -87,6 +87,7 @@ struct HomePage: View {
         HomeRow(name: "Color Picker", view: { TestColorPickerPage() }, icon: "scope"),
         HomeRow(name: "Move Item to Other List", view: { MoveItemToOtherListPage() }, icon: "list.bullet.below.rectangle"),
         HomeRow(name: "Drawing", view: { DrawingPage() }, icon: "hand.draw.fill"),
+        HomeRow(name: "Header Scroll", view: { DemoHeaderScrollView() }, icon: "list.dash.header.rectangle"),
     ]
 }
 
