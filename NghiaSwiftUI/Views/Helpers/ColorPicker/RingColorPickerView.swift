@@ -11,7 +11,12 @@ import SwiftUI
 
 struct RingColorPickerView: View {
     @Binding var selectedColor: Color
-    var ringWidth: CGFloat = 64
+    var ringWidth: CGFloat
+    
+    init(selectedColor: Binding<Color>, ringWidth: CGFloat = 64) {
+        self._selectedColor = selectedColor
+        self.ringWidth = ringWidth
+    }
     
     var body: some View {
         GeometryReader { geo in
@@ -32,6 +37,11 @@ struct RingColorPickerView: View {
             .gesture(measureAngle(width: geo.size.width, height: geo.size.height))
         }
         .aspectRatio(contentMode: .fit)
+        .onChange(of: selectedColor) { color in
+            withAnimation {
+                dAngle = colorToAngle(color: color)
+            }
+        }
     }
     
     /// Struct's private properties.
@@ -45,6 +55,7 @@ private extension RingColorPickerView {
     var markerView: some View {
         Circle()
             .frame(width: markerSize, height: markerSize)
+            .border(.white, width: 3)
             .foregroundColor(selectedColor)
     }
 }
@@ -86,6 +97,11 @@ private extension RingColorPickerView {
         let x = distance * cos(rAngle) + midX
         let y = distance * sin(rAngle) + midY
         return CGPoint(x: x, y: y)
+    }
+    
+    func colorToAngle(color: Color) -> CGFloat {
+        let (hue, _, _) = color.hsv
+        return hue * 360
     }
 }
 

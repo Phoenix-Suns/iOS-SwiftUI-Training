@@ -24,13 +24,18 @@
 		4BB8322B2A1A7FDC00322B0E /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8322A2A1A7FDC00322B0E /* CategoryRow.swift */; };
 		4BB8322D2A1A827C00322B0E /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8322C2A1A827C00322B0E /* CategoryItem.swift */; };
 		D500D68D2AE651BA00E364F2 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500D68C2AE651BA00E364F2 /* SliderView.swift */; };
+		D50AA41A2C9C1D280000C561 /* PagerWithAnimationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50AA4192C9C1D280000C561 /* PagerWithAnimationPage.swift */; };
 		D50C9CAC2B3AD6AD00888E08 /* PickVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C9CAB2B3AD6AD00888E08 /* PickVideoView.swift */; };
 		D5106C612C1BF0300098B2A1 /* HeaderScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5106C602C1BF0300098B2A1 /* HeaderScrollView.swift */; };
+		D5106CAC2C4E11CD00B3083A /* HalfHeartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5106CAB2C4E11CD00B3083A /* HalfHeartShape.swift */; };
+		D5106CAE2C4E12B400B3083A /* TestHeaderScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5106CAD2C4E12B400B3083A /* TestHeaderScrollView.swift */; };
+		D5106CB02C4E132B00B3083A /* TestHalfHeartShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5106CAF2C4E132B00B3083A /* TestHalfHeartShape.swift */; };
 		D51D47712BFCAD0100724DB4 /* RingColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D47702BFCAD0100724DB4 /* RingColorPickerView.swift */; };
 		D51D5E8F2ACAB30300FB41FE /* CommonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D5E8E2ACAB30300FB41FE /* CommonExt.swift */; };
 		D51D5E912ACAB6AD00FB41FE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D5E902ACAB6AD00FB41FE /* ToastView.swift */; };
 		D51D5E932ACAB7CB00FB41FE /* TestToastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D5E922ACAB7CB00FB41FE /* TestToastPage.swift */; };
 		D52AC48D2BBA87FF0033F550 /* UITipsTricksPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AC48C2BBA87FF0033F550 /* UITipsTricksPage.swift */; };
+		D52B700F2C819F7B00F63A85 /* AsyncTaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B700E2C819F7B00F63A85 /* AsyncTaskPage.swift */; };
 		D52B9BDD2AD3DF2300DB14E9 /* DataChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B9BDC2AD3DF2300DB14E9 /* DataChange.swift */; };
 		D52C09E82C004AE000A547CA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C09E72C004AE000A547CA /* TestView.swift */; };
 		D53E73212A1D254B009AF914 /* ListVerticalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E73202A1D254B009AF914 /* ListVerticalPage.swift */; };
@@ -61,6 +66,8 @@
 		D5AF3F982A7166A100B65261 /* TestLoadingViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF3F972A7166A100B65261 /* TestLoadingViewPage.swift */; };
 		D5AF3F9A2A71670400B65261 /* TestPagerDotPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF3F992A71670400B65261 /* TestPagerDotPage.swift */; };
 		D5B879A52AE0E16C0093D49B /* TestImageScalePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B879A42AE0E16C0093D49B /* TestImageScalePage.swift */; };
+		D5BE0FC32C647D5000DB6416 /* KeyboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE0FC22C647D5000DB6416 /* KeyboardPage.swift */; };
+		D5BE0FC62C64A4B300DB6416 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE0FC52C64A4B300DB6416 /* View+Ext.swift */; };
 		D5C291692A1F1FC00088136B /* GridHorizontalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C291682A1F1FC00088136B /* GridHorizontalItem.swift */; };
 		D5C2916B2A1F1FF70088136B /* GridHorizontalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2916A2A1F1FF70088136B /* GridHorizontalPage.swift */; };
 		D5C2916F2A1F598A0088136B /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2916E2A1F598A0088136B /* HStackPage.swift */; };
@@ -117,13 +124,18 @@
 		4BB8322A2A1A7FDC00322B0E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		4BB8322C2A1A827C00322B0E /* CategoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		D500D68C2AE651BA00E364F2 /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		D50AA4192C9C1D280000C561 /* PagerWithAnimationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerWithAnimationPage.swift; sourceTree = "<group>"; };
 		D50C9CAB2B3AD6AD00888E08 /* PickVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickVideoView.swift; sourceTree = "<group>"; };
 		D5106C602C1BF0300098B2A1 /* HeaderScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderScrollView.swift; sourceTree = "<group>"; };
+		D5106CAB2C4E11CD00B3083A /* HalfHeartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfHeartShape.swift; sourceTree = "<group>"; };
+		D5106CAD2C4E12B400B3083A /* TestHeaderScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHeaderScrollView.swift; sourceTree = "<group>"; };
+		D5106CAF2C4E132B00B3083A /* TestHalfHeartShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHalfHeartShape.swift; sourceTree = "<group>"; };
 		D51D47702BFCAD0100724DB4 /* RingColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingColorPickerView.swift; sourceTree = "<group>"; };
 		D51D5E8E2ACAB30300FB41FE /* CommonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExt.swift; sourceTree = "<group>"; };
 		D51D5E902ACAB6AD00FB41FE /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		D51D5E922ACAB7CB00FB41FE /* TestToastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToastPage.swift; sourceTree = "<group>"; };
 		D52AC48C2BBA87FF0033F550 /* UITipsTricksPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITipsTricksPage.swift; sourceTree = "<group>"; };
+		D52B700E2C819F7B00F63A85 /* AsyncTaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTaskPage.swift; sourceTree = "<group>"; };
 		D52B9BDC2AD3DF2300DB14E9 /* DataChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChange.swift; sourceTree = "<group>"; };
 		D52C09E72C004AE000A547CA /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D53E73202A1D254B009AF914 /* ListVerticalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVerticalPage.swift; sourceTree = "<group>"; };
@@ -154,6 +166,8 @@
 		D5AF3F972A7166A100B65261 /* TestLoadingViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoadingViewPage.swift; sourceTree = "<group>"; };
 		D5AF3F992A71670400B65261 /* TestPagerDotPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPagerDotPage.swift; sourceTree = "<group>"; };
 		D5B879A42AE0E16C0093D49B /* TestImageScalePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageScalePage.swift; sourceTree = "<group>"; };
+		D5BE0FC22C647D5000DB6416 /* KeyboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPage.swift; sourceTree = "<group>"; };
+		D5BE0FC52C64A4B300DB6416 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		D5C291682A1F1FC00088136B /* GridHorizontalItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridHorizontalItem.swift; sourceTree = "<group>"; };
 		D5C2916A2A1F1FF70088136B /* GridHorizontalPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridHorizontalPage.swift; sourceTree = "<group>"; };
 		D5C2916E2A1F598A0088136B /* HStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
@@ -289,6 +303,7 @@
 		4BB832202A1A74F600322B0E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D5BE0FC42C64A49700DB6416 /* Extenstions */,
 				D5CE9E022BAA954000825626 /* ColorPicker */,
 				D5C2A4432B87313300A65CD2 /* TextEditView.swift */,
 				D54BE2FA2AB9B0CB004CED17 /* SwipeView.swift */,
@@ -311,6 +326,7 @@
 				D553ED592B9859F500F1028A /* ViewParamPage.swift */,
 				D52C09E72C004AE000A547CA /* TestView.swift */,
 				D5106C602C1BF0300098B2A1 /* HeaderScrollView.swift */,
+				D5106CAB2C4E11CD00B3083A /* HalfHeartShape.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -410,8 +426,18 @@
 				D5B879A42AE0E16C0093D49B /* TestImageScalePage.swift */,
 				D5C9B5D12AE18C1A00F047CF /* TestSliderPage.swift */,
 				D5CE9E092BAAA1BA00825626 /* TestColorPickerPage.swift */,
+				D5106CAD2C4E12B400B3083A /* TestHeaderScrollView.swift */,
+				D5106CAF2C4E132B00B3083A /* TestHalfHeartShape.swift */,
 			);
 			path = TestHelper;
+			sourceTree = "<group>";
+		};
+		D5BE0FC42C64A49700DB6416 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE0FC52C64A4B300DB6416 /* View+Ext.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 		D5C291672A1F1F920088136B /* GridHorizontal */ = {
@@ -435,6 +461,9 @@
 				D58902C62BB17045001295C1 /* MoveItemToOtherListPage.swift */,
 				D553FAF02BB26E550072B65B /* DrawingPage.swift */,
 				D52AC48C2BBA87FF0033F550 /* UITipsTricksPage.swift */,
+				D5BE0FC22C647D5000DB6416 /* KeyboardPage.swift */,
+				D52B700E2C819F7B00F63A85 /* AsyncTaskPage.swift */,
+				D50AA4192C9C1D280000C561 /* PagerWithAnimationPage.swift */,
 			);
 			path = _Practice;
 			sourceTree = "<group>";
@@ -638,11 +667,13 @@
 				D5CDE5F92B4F9D8700A55F0F /* PopoverPage.swift in Sources */,
 				D5C9B5D22AE18C1A00F047CF /* TestSliderPage.swift in Sources */,
 				4BB832072A1A135100322B0E /* MapView.swift in Sources */,
+				D5106CAC2C4E11CD00B3083A /* HalfHeartShape.swift in Sources */,
 				D53E73212A1D254B009AF914 /* ListVerticalPage.swift in Sources */,
 				D5C2A4442B87313300A65CD2 /* TextEditView.swift in Sources */,
 				4B1E44E12A122EF0006317BD /* NghiaSwiftUIApp.swift in Sources */,
 				D5A85D6F2A2DB61D005EAA20 /* ListTopGridPage.swift in Sources */,
 				D5A9F7332A94ACA7009F7DB1 /* PullToRefreshView.swift in Sources */,
+				D5BE0FC32C647D5000DB6416 /* KeyboardPage.swift in Sources */,
 				D5EA0CBF2A49923D0069C010 /* LoadingView.swift in Sources */,
 				D5CE9E082BAA9CC000825626 /* AngularGradientView.swift in Sources */,
 				4BB8321A2A1A588500322B0E /* LandmarkList.swift in Sources */,
@@ -656,7 +687,9 @@
 				D51D47712BFCAD0100724DB4 /* RingColorPickerView.swift in Sources */,
 				D5C518372A1E5D5A006FBFBE /* GridVerticalPage.swift in Sources */,
 				D5AF3F982A7166A100B65261 /* TestLoadingViewPage.swift in Sources */,
+				D5106CAE2C4E12B400B3083A /* TestHeaderScrollView.swift in Sources */,
 				D5DCB5712AC55D9400570392 /* Helper.swift in Sources */,
+				D50AA41A2C9C1D280000C561 /* PagerWithAnimationPage.swift in Sources */,
 				D572CD292A5C17D800941C68 /* PagerView.swift in Sources */,
 				D5946D382A38602C00F51795 /* IntSliderView.swift in Sources */,
 				D53E732B2A1D2C86009AF914 /* ListHorizontalItem.swift in Sources */,
@@ -677,10 +710,12 @@
 				D5CE9E112BAADB4400825626 /* SquareColorPicker2View.swift in Sources */,
 				4BB832052A1A11E800322B0E /* CircleImage.swift in Sources */,
 				D5C2916B2A1F1FF70088136B /* GridHorizontalPage.swift in Sources */,
+				D5BE0FC62C64A4B300DB6416 /* View+Ext.swift in Sources */,
 				D51D5E912ACAB6AD00FB41FE /* ToastView.swift in Sources */,
 				D5A9F7352A94B0F6009F7DB1 /* TestPullToRefreshPage.swift in Sources */,
 				4BB832112A1A238800322B0E /* Landmark.swift in Sources */,
 				D5D615BD2BABDCF900241BBF /* CustomSlider.swift in Sources */,
+				D52B700F2C819F7B00F63A85 /* AsyncTaskPage.swift in Sources */,
 				D5D615B92BABDAE900241BBF /* HueSlider.swift in Sources */,
 				4BB8322D2A1A827C00322B0E /* CategoryItem.swift in Sources */,
 				D57863BD2A1CB5DA00F51DD0 /* TabPage.swift in Sources */,
@@ -688,6 +723,7 @@
 				4BB832182A1A469900322B0E /* LandmarkRow.swift in Sources */,
 				D5106C612C1BF0300098B2A1 /* HeaderScrollView.swift in Sources */,
 				D5C291742A1FB56C0088136B /* AnimationPage.swift in Sources */,
+				D5106CB02C4E132B00B3083A /* TestHalfHeartShape.swift in Sources */,
 				D51D5E932ACAB7CB00FB41FE /* TestToastPage.swift in Sources */,
 				D5627A5C2AF0FC2C00597F5B /* SectorChartExample.swift in Sources */,
 				D5AF3F932A7164BA00B65261 /* MarqueeText.swift in Sources */,

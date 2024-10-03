@@ -72,6 +72,7 @@ struct HomePage: View {
         HomeRow(name: "URL Image", view: { AsyncImage(urlString: "https://picsum.photos/200") }, icon: nil),
         HomeRow(name: "Loading View", view: { TestLoadingViewPage() }, icon: nil),
         HomeRow(name: "Pager View", view: { TestPagerDotPage() }, icon: nil),
+        HomeRow(name: "Pager with Animation", view: { PagerWithAnimationPage() }, icon: nil),
         HomeRow(name: "Swipe View", view: { TestSwipeViewPage() }, icon: nil),
         HomeRow(name: "Marquee Text (running text)", view: { TestMarqueePage() }, icon: nil),
         HomeRow(name: "Bottom Sheet", view: { TestBottomSheetPage() }, icon: nil),
@@ -87,7 +88,10 @@ struct HomePage: View {
         HomeRow(name: "Color Picker", view: { TestColorPickerPage() }, icon: "scope"),
         HomeRow(name: "Move Item to Other List", view: { MoveItemToOtherListPage() }, icon: "list.bullet.below.rectangle"),
         HomeRow(name: "Drawing", view: { DrawingPage() }, icon: "hand.draw.fill"),
-        HomeRow(name: "Header Scroll", view: { DemoHeaderScrollView() }, icon: "list.dash.header.rectangle"),
+        HomeRow(name: "Header Scroll", view: { TestHeaderScrollView() }, icon: "list.dash.header.rectangle"),
+        HomeRow(name: "Custom Clip Sharp (half heart)", view: { TestHalfHeartShape() }, icon: "heart.fill"),
+        HomeRow(name: "Keyboard Popup", view: { KeyboardPage() }, icon: "keyboard"),
+        HomeRow(name: "Async Task", view: { AsyncTaskPage() }, icon: "clock.arrow.2.circlepath"),
     ]
 }
 

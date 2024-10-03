@@ -6,25 +6,36 @@
 //
 
 import SwiftUI
+import UIKit
+import Foundation
 
+// https://medium.com/swlh/swiftui-create-a-stretchable-header-with-parallax-scrolling-4a98faeeb262
+// https://gist.github.com/bbaars/d6a5227f4ea585d9176812c882c74c7f
+// https://danielsaidi.com/blog/2023/02/06/adding-a-stretchable-header-to-a-swiftui-scroll-view
 struct HeaderScrollView: View {
-    let header: () -> (any View)
-    let content: () -> (any View)
+    @Binding var toTop: Bool
     let headerExpandHeight: CGFloat = 300
     let headerCollapsedHeight: CGFloat = 150
+    let header: () -> (any View)
+    let content: () -> (any View)
     
     var body: some View {
-        ScrollView {
-            VStack {
-                GeometryReader { geometry in
-                    AnyView(header())
-                        .frame(width: geometry.size.width, height: self.headerHeight(geometry: geometry))
-                        .offset(x: 0, y: self.headerOffset(geometry: geometry))
-                }.frame(height: 300)
-                
-                AnyView(content())
+        ScrollViewReader { reader in
+            ScrollView {
+                VStack {
+                    ScrollToTopItem(reader: reader, scrollOnChange: $toTop)
+                    
+                    GeometryReader { geometry in
+                        AnyView(header())
+                            .frame(width: geometry.size.width, height: self.headerHeight(geometry: geometry))
+                            .offset(x: 0, y: self.headerOffset(geometry: geometry))
+                    }.frame(height: 300)
+                    
+                    AnyView(content())
+                }
             }
         }
+        .edgesIgnoringSafeArea(.all)
     }
     
     private func scrollOffset(geometry: GeometryProxy) -> CGFloat {
@@ -50,47 +61,34 @@ struct HeaderScrollView: View {
     private func headerHeight(geometry: GeometryProxy) -> CGFloat {
         let offset = scrollOffset(geometry: geometry)
         let imageHeight = geometry.size.height
-
+        
         if offset > 0 {
             return imageHeight + offset
         }
-
+        
         return imageHeight
     }
 }
 
-struct DemoHeaderScrollView: View {
+struct ScrollToTopItem: View {
+    let reader: ScrollViewProxy
+    @Binding var scrollOnChange: Bool
+    private let id = "ScrollToTopItem"
+    
     var body: some View {
-        HeaderScrollView {
-            header1
-        } content: {
-            ForEach(data, id: \.self) { item in
-                ItemView(data: item)
+        EmptyView()
+            .id(self.id)
+            .onChange(of: scrollOnChange) { toTop in
+                if toTop {
+                    scrollOnChange = false
+                    withAnimation {
+                        reader.scrollTo(id, anchor: .bottom)
+                    }
+                }
             }
-        }
-
-    }
-    
-    var data: [String] = Array(0...100).map { item in
-        String(item)
-    }
-    
-    @ViewBuilder var header1: some View {
-        Image(systemName: "photo.artframe")
-            .resizable()
-            .frame(height: UIScreen.main.bounds.height / 2.3)
-    }
-}
-
-struct ItemView: View {
-    var data: String
-    
-    var body: some View {
-        Text(data)
-            .font(.title)
     }
 }
 
 #Preview {
-    DemoHeaderScrollView()
+    TestHeaderScrollView()
 }
